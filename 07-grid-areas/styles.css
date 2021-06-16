@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: [inline-start] 200px [inline-2] 700px [inline-end];
-  grid-template-rows: 100px 600px;
+  grid-template-rows: [block-start] 100px [block-2] 600px [block-end];
   grid-template-areas: "header header" "sidebar main";
 }
 
