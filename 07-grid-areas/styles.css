@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: [inline-start] 200px [inline-2] 700px [inline-end];
+  grid-template-rows: 100px 600px;
+  grid-template-areas: "header header" "sidebar main";
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+
+
+.item:nth-of-type(1) {
+  grid-area: header;
+  /* grid-column-start: 1;
+  grid-column-end: -1;
+  grid-column: 1 / inline-end; */
+}
+
+.item:nth-of-type(2) {
+  grid-area: sidebar;
+
+  border-color: blue;
+}
+.item:nth-of-type(3) {
+  grid-area: main;
+
+  border-color: green;
+}
+
