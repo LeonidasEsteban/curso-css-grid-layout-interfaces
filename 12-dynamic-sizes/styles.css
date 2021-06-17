@@ -1,0 +1,37 @@
+.container {
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [block-start] 1fr [block-2] 200px 100px [block-end];
+  gap: 2rem;
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+
+
+.item:nth-of-type(1) {
+
+}
+
+.item:nth-of-type(2) {
+  padding: 2rem;
+  margin: 20px;
+  /* padding: 1rem;
+  margin: 1rem; */
+}
+.item:nth-of-type(3) {
+
+}
+
+
+.item:nth-of-type(4) {
+
+}
