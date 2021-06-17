@@ -1,0 +1,48 @@
+.container {
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: [inline-start] 1fr [inline-2] 3fr [inline-end];
+  grid-template-rows: [block-start] 1fr [block-2] 200px 100px [block-end];
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+  gap: 40px;
+  row-gap: 10px;
+  column-gap: 5px;
+  grid-column-gap: 0px;
+  block-size: 100vh;
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+
+
+.item:nth-of-type(1) {
+  grid-area: header;
+  margin-block-end: 10px;
+  /* grid-column-start: 1;
+  grid-column-end: -1;
+  grid-column: 1 / inline-end; */
+}
+
+.item:nth-of-type(2) {
+  grid-area: sidebar;
+
+  border-color: blue;
+}
+.item:nth-of-type(3) {
+  grid-area: main;
+
+  border-color: green;
+}
+
+
+.item:nth-of-type(4) {
+  grid-area: footer;
+  margin-block-start: 50px;
+}
