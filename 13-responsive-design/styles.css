@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  block-size: 100vh;
+  max-inline-size: 1024px;
+  margin: auto;
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+
