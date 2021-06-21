@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  /* grid-auto-columns: minmax(200px, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-auto-columns: 200px; */
+  grid-template-columns: repeat(6, 200px);
+  grid-auto-rows: 200px;
+  /* gap: 2rem; */
+  block-size: 100vh;
+  /* max-inline-size: 1024px; */
+  margin: auto;
+  /* grid-auto-flow: column; */
+  border: 10px solid brown;
+  /* grid-auto-flow: column dense; */
+  /* writing-mode: vertical-lr; */
+  /* align-items: center; */
+  /* align-content: center; */
+
+  /* justify-items: center; */
+  /* justify-content: space-evenly; */
+
+  /* place-items: center; */
+  place-content: center space-evenly;
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+  font-size: 3rem;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: ; */
+  /* justify-self: ; */
+  /* place-self: ; */
+}
+
+.item::before {
+  content: counter(item);
+}
+
+.item:nth-child(4) {
+  border-color: purple;
+  /* grid-row-start: 1;
+  grid-column-start: 2; */
+  /* grid-column-end: span 2; */
+  /* grid-row-end: span 2; */
+}
+
+
+.item:nth-child(3) {
+  /* align-self: center;
+  justify-self: center; */
+  place-self: center;
+  border-color: green;
+  /* grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-end: span 2; */
+  /* grid-column-start: 1; */
+}
+
