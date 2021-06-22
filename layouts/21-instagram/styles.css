@@ -1,0 +1,30 @@
+.wrapper {
+  margin: auto;
+  max-inline-size: 935px;
+  border: 1px solid purple;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.post {
+  border: 1px solid blue;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.post img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+}
+
+@media (max-width: 735px) {
+  .grid {
+    gap: 3px;
+  }
+}
