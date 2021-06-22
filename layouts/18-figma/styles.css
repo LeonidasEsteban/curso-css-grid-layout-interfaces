@@ -1,9 +1,77 @@
 input[id="list"]:checked ~ .project-list{
-  border: 1px solid red;
+  border: 10px solid green;
 }
 
+input[id="list"]:checked ~ .project-list .project{
+  border: 1px solid red;
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  grid-template-columns: 50px 1fr 100px 100px;
+}
+
+
+input[id="list"]:checked ~ .project-list .project img {
+  inline-size: 50px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+
+
+
+
 input[id="grid"]:checked ~ .project-list{
-  border: 1px solid blue;
+  border: 10px solid blue;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+input[id="grid"]:checked ~ .project-list .project{
+  border: 5px solid green;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 200px auto auto;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+input[id="grid"]:checked ~ .project-list .project img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  grid-area: 1 / 1/ 1 / -1;
+}
+
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(1) {
+  /* background-color: sred; */
+  grid-column-start: 2;
+}
+input[id="grid"]:checked ~ .project-list .project time:nth-of-type(2) {
+  /* background-color: blue; */
+  grid-column-start: 2;
+}
+
+
+input[id="grid"]:checked ~ .project-list .project-name {
+  /* background-color: orange; */
+  grid-row: 2 / 4;
+}
+
+
+
+
+
+
+
+
+.project-list {
+  padding: 1rem;
 }
 
 .project-actions {
