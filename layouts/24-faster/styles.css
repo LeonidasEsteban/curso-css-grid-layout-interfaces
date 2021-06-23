@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --phoneInlineSize: 300px;
+  --gridColumns: 1fr var(--phoneInlineSize) 1080px 1fr;
+}
+
+header {
+  background-color: blue;
+  /* grid-column-start: 2; */
+  grid-area: header;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--gridColumns);
+  grid-template-rows: 200px;
+  grid-template-areas: "wrapper-start header header wrapper-end" "wrapper-start phone content wrapper-end";
+}
+
+
+.hero {
+  background-color: aquamarine;
+  grid-column: 1 / -1;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-areas: ". . content .";
+}
+
+.hero-content {
+  /* grid-row-start: 1;
+  grid-column-start: 3; */
+  grid-area: content;
+}
+
+
+
+.phone {
+  grid-area: phone;
+  background-color: red;
+  aspect-ratio: 9/16;
+  inline-size: var(--phoneInlineSize);
+  position: sticky;
+  inset-block-start:0;
+  /* top: 0; */
+}
+
+section {
+  grid-column: 1 / -1;
+  min-block-size: 400px;
+  border: 1px solid red;
+  counter-increment: section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+section::after {
+  content: counter(section)
+}
