@@ -1,0 +1,38 @@
+.justifyContent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  gap: 2rem;
+}
+
+.spaceBetween {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.spaceBetween ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+
+}
+
+.spaceBetween img {
+  block-size: 100px;
+  border-radius: 50%;
+}
+
+/* .justifyContent img:nth-of-type(1) {
+  align-self: flex-end;
+}
+.justifyContent img:nth-of-type(2) {
+  align-self: center;
+} */
+/* .justifyContent > img {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+} */

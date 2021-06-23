@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  gap: 1rem;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+@supports not(backdrop-filter: blur(5px)) {
+  .header {
+    background: var(--gray50);
+  }
+}

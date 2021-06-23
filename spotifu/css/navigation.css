@@ -1,0 +1,28 @@
+.navigation {
+  flex-shrink: 0;
+}
+
+.navigation button {
+  /* border: 1px solid red; */
+  background: var(--gray60);
+  color: var(--gray10);
+  inline-size: 1.875rem;
+  block-size: 1.875rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.navigation button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.navigation-prev i {
+  position: relative;
+  left: -1px;
+}
+
+.navigation-next i {
+  position: relative;
+  left: 2px;
+}

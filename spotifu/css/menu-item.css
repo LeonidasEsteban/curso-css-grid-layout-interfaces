@@ -1,0 +1,41 @@
+.menuItem {
+  /* border: 1px solid green; */
+}
+
+.menuItem a {
+  /* border: 1px solid red; */
+  display: flex;
+  font: var(--button);
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  /* border-left: 4px solid var(--primary); */
+  block-size: 2.5rem;
+  /* line-height: 2.5rem; */
+  align-items: center;
+  gap: .5rem;
+}
+
+.menuItem a:hover {
+  text-decoration: none;
+}
+
+.menuItem [class^="icon-"] {
+  font-size: 1.5rem;
+}
+
+.menuItem.is-active a {
+  color: var(--white);
+  box-shadow: inset 4px 0 0 var(--primary);
+}
+
+.menuItem.is-active .icon-home::before {
+  content: "\e909";
+}
+
+.menuItem.is-active .icon-search::before {
+  content: "\e913";
+}
+
+/* .menuItem.is-active .icon-creditCard::before {
+  content: "\e909";
+} */

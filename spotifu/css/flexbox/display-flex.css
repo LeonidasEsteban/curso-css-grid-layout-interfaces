@@ -1,0 +1,7 @@
+.displayFlex {
+  display: flex;
+}
+
+.displayFlex .box + .box {
+  margin-inline-start: 1rem;
+}

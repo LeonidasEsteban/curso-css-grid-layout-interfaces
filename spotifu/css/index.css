@@ -1,0 +1,44 @@
+@import './icons.css';
+@import './fonts.css';
+@import './body.css';
+@import './link.css';
+@import './button-icon.css';
+@import './sidebar.css';
+@import './ellipsis.css';
+@import './player.css';
+@import './page.css';
+@import './layout.css';
+@import './scrollbar.css';
+
+:root {
+  font-size: 14px;
+  --primary: #00B050;
+  --white: #ffffff;
+  --gray10: #B3B3B3;
+  --gray20: #737373;
+  --gray30: #282828;
+  --gray40: #181818;
+  --gray50: #121212;
+  --gray60: #000000;
+  --basefontFamily: Avenir, Helvetica, sans-serif;
+  --headline1: bold 2rem/normal var(--basefontFamily);
+  --headline2: bold 1.5rem/1.75rem var(--basefontFamily);
+  --baseFont: normal .875rem/1.375rem var(--basefontFamily);
+  --baseFontBold: bold .875rem/1.375rem var(--basefontFamily);
+  --button: bold .875rem/1rem var(--basefontFamily);
+  --small: normal .75em/normal var(--basefontFamily);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+

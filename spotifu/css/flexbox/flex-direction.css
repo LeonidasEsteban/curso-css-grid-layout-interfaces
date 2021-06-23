@@ -1,0 +1,6 @@
+.flexDirection {
+  display: flex;
+  flex-direction: column-reverse;
+  max-block-size: 200px;
+  overflow: auto;
+}
