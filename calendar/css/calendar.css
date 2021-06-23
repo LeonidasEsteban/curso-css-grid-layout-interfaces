@@ -1,0 +1,19 @@
+.calendar {
+  color: var(--gray20);
+  padding-inline: 1.5rem;
+  --minBlockSize: 4rem;
+  --maxBlockSize: auto;
+  --minInlineSize: 5rem;
+  --maxInlineSize: 10rem;
+}
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: auto repeat(7, minmax(var(--minInlineSize), var(--maxInlineSize)));
+  grid-template-rows: 7rem repeat(24, minmax(var(--minBlockSize), var(--maxBlockSize)));
+  min-block-size: 700px;
+}
+
+.calendar-day {
+
+}
