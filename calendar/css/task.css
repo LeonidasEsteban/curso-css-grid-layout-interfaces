@@ -1,0 +1,17 @@
+.task {
+  background: var(--blue10);
+  color: var(--white);
+  border-radius: .25rem;
+  padding-inline: 1rem;
+  padding-block: .625rem;
+  overflow: hidden;
+  font: var(--body2-medium);
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.task p {
+  margin: 0;
+  white-space: nowrap;
+}
