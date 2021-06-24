@@ -5,7 +5,7 @@
 }
 
 .taskCell:nth-child(8n) {
-  border-inline-end: 1px solid currentColor;
+  /* border-inline-end: 1px solid currentColor; */
 }
 
 .taskCell.is-active::before {
