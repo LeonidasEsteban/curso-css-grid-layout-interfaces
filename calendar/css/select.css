@@ -1,0 +1,13 @@
+.select {
+  border: 1px solid var(--gray20);
+  padding-inline: .75rem;
+  padding-block: .5rem;
+  padding-inline-end: 2rem;
+  border-radius: .25rem;
+  font: var(--button-button);
+
+  appearance: none;
+  background-image: url("../icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
