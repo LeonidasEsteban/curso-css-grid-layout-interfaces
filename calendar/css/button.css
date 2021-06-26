@@ -1,0 +1,65 @@
+.button {
+  border: 1px solid transparent;
+  padding-inline: 1rem;
+  padding-block: .5rem;
+  display: inline-block;
+  font: var(--button-button);
+  text-decoration: none;
+  cursor: pointer;
+  color: currentColor;
+  background: transparent;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.button:active {
+  transform: scale(.9);
+}
+
+.button.is-primary {
+  background: var(--blue10);
+  color: var(--white);
+}
+
+.button.is-secondary {
+  border: 1px solid var(--gray20);
+}
+
+.button.is-primary:hover,
+.button.is-primary:focus {
+  background: var(--blue30);
+}
+.button:hover,
+.button:focus,
+.button.is-secondary:hover,
+.button.is-secondary:focus,
+.button.is-rounded:focus,
+.button.is-secondary:hover,
+.button.is-compact:hover,
+.button.is-compact:focus {
+  background: var(--gray10);
+}
+
+
+
+.button.is-rounded {
+  border-radius: 1.25rem;
+  color: var(--blue10);
+}
+
+.button.is-compact {
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.button i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+.button i, .button span {
+  vertical-align: middle;
+}
+
+.button.is-shadowed {
+  box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815), 0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185), 0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
+}
