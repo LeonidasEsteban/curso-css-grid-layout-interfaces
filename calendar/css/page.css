@@ -8,8 +8,6 @@
 
 .page .header {
   grid-area: header;
-  border: 10px solid blue;
-
 }
 
 .page .sidebar {
