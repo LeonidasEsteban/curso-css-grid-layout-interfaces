@@ -5,6 +5,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
+  margin: initial;
   max-inline-size: 28rem;
   inline-size: 100%;
   border-radius: .25rem;
