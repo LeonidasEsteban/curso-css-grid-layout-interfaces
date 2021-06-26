@@ -1,0 +1,22 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  max-inline-size: 28rem;
+  inline-size: 100%;
+  border-radius: .25rem;
+  border: none;
+  box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815), 0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185), 0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
+}
+
+.modal::backdrop {
+  background: rgb(0,0,0,.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+}
