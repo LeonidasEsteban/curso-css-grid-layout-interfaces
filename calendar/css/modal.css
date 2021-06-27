@@ -5,6 +5,8 @@
   position: absolute;
   top: 200px;
   left: 200px;
+  padding-inline: 3rem;
+  padding-block: 1.5rem;
   margin: initial;
   max-inline-size: 28rem;
   inline-size: 100%;
